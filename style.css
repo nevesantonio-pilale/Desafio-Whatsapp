@@ -1,0 +1,132 @@
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    box-sizing: border-box;
+}
+
+
+html {
+    position: relative;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url(./fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.temporizador {
+    width: 60%;
+    /*height: 100vh;*/
+    margin: 60px auto;
+    opacity: 80%;
+    border-radius: 18px;
+    background-color: #eeeff7;
+}
+
+.titulo-principal {
+    color: #22212171;
+    font-size: 24pt;
+    font-weight: 800;
+    padding: 220px 30px 50px 250px;
+}
+
+
+.caixas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.caixas-meio {
+    width: 100px;
+    height: 110px;
+    margin: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: Arimo;
+    background-color: #333333;
+}
+
+
+.caixas-meio h2 {
+    font-size: 26pt;
+    padding: 3px;
+}
+
+
+.p-ate-ja {
+    
+    text-align: center;
+    margin-top: 130px;
+    color: #999999;
+    font-size: 14pt;
+    font-family: Arimo;
+}
+
+
+/* media query */
+
+@media screen and (min-width: 769px ) and (max-width: 1293px) {
+
+    .titulo-principal {
+        text-align: center;
+        font-size: 24px;
+        padding: 200px 30px 50px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        /*height: 100vh;*/
+        position: absolute;
+    }
+    
+    .temporizador {
+        width: 95%;
+        height: auto;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    
+    
+    .titulo-principal {
+        text-align: center;
+        font-size: 24px;
+        padding: 60px 30px 50px 10px;
+    }
+    
+    
+    .caixas {
+        width: calc(100 / 4);
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .caixas-meio {
+        width: 80px;
+        height: 100px;
+        margin: 20px;
+    }
+
+
+    .p-ate-ja {
+        margin-top: 60px;
+    }
+}
